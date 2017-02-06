@@ -121,6 +121,9 @@ body {
   padding-top: 1em;
   font-size: 1em;
   font-family: Helvetica; }
+  @media screen and (max-width: 29em) {
+    #chatform {
+      width: 90%; } }
 
 .chatbox-area {
   margin: 0 auto;
