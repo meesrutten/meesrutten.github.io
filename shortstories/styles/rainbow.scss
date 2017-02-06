@@ -1,0 +1,205 @@
+$main-color: #001f37;
+$complementary-color: #f6861f;
+$link-color: #005184;
+$additional-color-purple: #421f62;
+$additional-color-green: #63bd45;
+$additional-color-blue: #002b45;
+$background-color-1: #eaedee;
+$background-color-2: #edf4fb;
+
+$tablet-width: 48em;
+$desktop-width: 80em;
+
+$body-font: Helvetica Neue, Helvetica, Arial, sans-serif;
+$title-link-font: 'Signika', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$padding: 3em;
+$button-length: 75%;
+
+////////
+// Regenboog story
+////////
+
+.rainbow__body {
+  overflow-y: hidden;
+  background-color: #73d8ed;
+  max-height: 110vh;
+  .story__title {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    //https://rainbowcoding.com/how-to-create-rainbow-text-in-html-css-javascript/
+  }
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.rainbow__container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 40em;
+}
+.story__wrapper {
+  max-height: 40vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 105%;
+  height: 100%;
+  padding-right: 5%;
+  margin-top: 35vh;
+  background-color: #73d8ed;
+  z-index: 10;
+  // background: rgb(115,216,237);
+  // background: -webkit-linear-gradient(top, rgba(115,216,237,1) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,1) 85%,rgba(115,216,237,1) 100%);
+  padding: 1em;
+  // box-shadow: 0px 10px 5px #fff, 0px -10px 5px #fff;
+  // border-top-width: 1em;
+  // border-top-style: solid;
+  // border-top-image: -webkit-linear-gradient(top, rgba(235,239,239,0.65) 0%,rgba(235,239,239,0) 100%);
+  .story__body {
+    margin-top: 0;
+    // line-height: 3;
+    font-size: 1.85em;
+  }
+  .story__color {
+    // background-color: #fff;
+    font-family: cursive;
+    padding: 0 0.5em;
+    font-size: 1.25em;
+  }
+  .violet {
+    background-color: lighten($additional-color-purple, 50%);
+    // opacity: 0.5;
+    color: #fff;
+  }
+  .purple {
+    background-color: $additional-color-purple;
+    color: #fff;
+  }
+  .blue {
+    background-color: $link-color;
+    color: #fff;
+  }
+  .yellow {
+    background-color: #FFE119;
+    // color: #fff;
+  }
+  .orange {
+    background-color: $complementary-color;
+    color: #fff;
+
+  }
+  .red {
+    background-color: #d11f2f;
+    color: #fff;
+
+  }
+  .infrared {
+    background-color: lighten(#d11f2f, 20%);
+    // opacity: 0.5;
+    color: #fff;
+  }
+}
+.sun-svg {
+  position: absolute;
+  right: -150px;
+  top: 205px;
+}
+
+.cloud-svg {
+  position: absolute;
+  // left: -220px;
+  right: 0;
+  top: 20%;
+  z-index: 2;
+}
+
+.cloud-svg-2 {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.cloud-svg-3 {
+  position: absolute;
+  top: 0;
+  right: 25%;
+}
+
+.cloud-svg-4 {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+
+.rainbow-svg {
+  display: flex;
+  opacity: 0;
+  align-self: center;
+  position: absolute;
+  top: -5%;
+  // right: 0;
+  z-index: 9;
+  // max-width: 140vw;
+  width: 200%;
+  transition: visibility 3s ease-in;
+  // visibility: hidden;
+  animation-name: rainbow;
+  animation-play-state: paused;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  @media all and (min-width: 43em) {
+    top: 0;
+    width: 150%;
+  }
+  @media all and (min-width: 73.125em) {
+    height: auto;
+    top: 5%;
+    width: 110%;
+  }
+}
+
+.rainbow-animate {
+  animation-play-state: running;
+
+}
+
+@keyframes rainbow {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+// .element::-webkit-scrollbar {
+//   width: 0 !important;
+//   display: none;
+// }
+
+////////
+// Rain
+////////
+// https://codepen.io/alemesre/pen/hAxGg
+.drop {
+  background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6))  );
+  background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
+	width:1px;
+	height:89px;
+	position: absolute;
+	bottom:200px;
+	-webkit-animation: fall .63s linear infinite;
+  -moz-animation: fall .63s linear infinite;
+  z-index: 99;
+}
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+	to {margin-top:900px;}
+}
+@-moz-keyframes fall {
+	to {margin-top:900px;}
+}

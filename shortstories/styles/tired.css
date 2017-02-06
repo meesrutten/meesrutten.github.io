@@ -1,0 +1,173 @@
+body {
+  background-color: #fff;
+  animation: sleepyContent 12s ease-in infinite;
+  animation-delay: 6s;
+  overflow-x: hidden; }
+
+.story__body {
+  font-size: 1.5em; }
+
+.sleeping {
+  height: 80vh;
+  margin: 1em auto; }
+
+.cloud__story {
+  margin-top: -75%;
+  font-size: 1.5em;
+  line-height: 1.75;
+  margin-bottom: 50%; }
+
+.asleep {
+  background: -webkit-linear-gradient(top, black 0%, rgba(163, 163, 163, 0.5) 100%);
+  background: linear-gradient(to bottom, black 0%, rgba(163, 163, 163, 0.5) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+.wake-up {
+  background: -webkit-linear-gradient(left, rgba(163, 163, 163, 0.5) 0%, black 100%);
+  background: linear-gradient(to right, rgba(163, 163, 163, 0.5) 0%, black 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+.last-sentence {
+  font-family: "Signika";
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  margin: 1em auto; }
+
+.cloud1 {
+  background: url(../images/cloud1.png) no-repeat;
+  background-size: 100%;
+  width: 20.625em;
+  height: 15em;
+  position: relative;
+  top: 10vh;
+  animation: clouds 25s linear infinite;
+  transform: translateZ(0) translateX(-50%);
+  left: 50%; }
+
+.cloud2 {
+  background: url(../images/cloud2.png) no-repeat;
+  background-position: 50%;
+  background-size: 10.5em 6.875em;
+  width: 16.75em;
+  height: 15.625em;
+  position: relative;
+  top: -15vh;
+  transform: translateZ(0) translateX(-50%);
+  animation: clouds 25s linear infinite;
+  transition: .2s; }
+
+.cloud3 {
+  background: url(../images/cloud2.png) no-repeat;
+  background-position: 50%;
+  background-size: 12.5em 10em;
+  width: 18.75em;
+  height: 18.75em;
+  position: relative;
+  top: -25vh;
+  right: 10%;
+  transform: translateZ(0) translateX(-50%) rotateY(180deg);
+  animation: reverseClouds 25s linear infinite; }
+
+@keyframes clouds {
+  0% {
+    transform: translateX(-50%); }
+  50% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(-50%); } }
+@keyframes reverseClouds {
+  0% {
+    transform: translateX(50%); }
+  50% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(50%); } }
+.blink--lid {
+  width: 100vw;
+  height: 75vh;
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+  transform: rotateZ(360deg) translateZ(0);
+  perspective: 1000px;
+  overflow: hidden;
+  background-color: #000;
+  background-image: -webkit-linear-gradient(top, #000 0%, #333333 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(to bottom, #000 0%, #333333 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.animation__blink--top {
+  transform: translateY(-75vh);
+  animation: closeTopLid 12s ease-in infinite;
+  animation-delay: 6s; }
+
+.animation__blink--bottom {
+  transform: translateY(125vh);
+  background-image: -webkit-linear-gradient(top, #333333 0%, #000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(to bottom, #333333 0%, #000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  animation: closeBottomLid 12s ease-in infinite;
+  animation-delay: 6s; }
+
+@keyframes closeTopLid {
+  0% {
+    transform: translateY(-75vh); }
+  25% {
+    transform: translateY(-45vh);
+    animation-timing-function: ease-in-out; }
+  30% {
+    transform: translateY(-55vh);
+    animation-timing-function: ease-in; }
+  50% {
+    transform: translateY(-25vh); }
+  55% {
+    transform: translateY(-25vh);
+    animation-timing-function: ease-out; }
+  58% {
+    transform: translateY(-75vh); }
+  100% {
+    transform: translateY(-75vh); } }
+@keyframes closeBottomLid {
+  0% {
+    transform: translateY(100vh); }
+  25% {
+    transform: translateY(70vh);
+    animation-timing-function: ease-in-out; }
+  30% {
+    transform: translateY(80vh);
+    animation-timing-function: ease-in; }
+  50% {
+    transform: translateY(50vh); }
+  55% {
+    transform: translateY(50vh);
+    animation-timing-function: ease-out; }
+  58% {
+    transform: translateY(100vh); }
+  100% {
+    transform: translateY(100vh); } }
+@keyframes sleepyContent {
+  0% {
+    color: black;
+    text-shadow: 0 0 5px transparent; }
+  25% {
+    color: black;
+    text-shadow: 0 0 5px transparent; }
+  50% {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  65% {
+    color: black;
+    text-shadow: 0 0 5px transparent; } }
+
+/*# sourceMappingURL=tired.css.map */

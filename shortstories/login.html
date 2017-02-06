@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__grid-container">
+      <a href="index.html" class="header__link"><h1>Short Stories</h1></a>
+      <div class="header__button-container">
+        <button class="header__button header__button--search">
+          <svg class="header__button--icon" width="30" height="28" viewBox="275 18 30 28" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd" transform="translate(277 20)" stroke="#fff" stroke-width="3">
+              <circle cx="8.565" cy="8.565" r="8.565"/>
+              <path d="M15.896 14.896l8.772 7.552" stroke-linecap="square"/>
+            </g>
+          </svg>
+        </button>
+        <a href="/login.html" class="header__button header__button--profile">
+          <svg class="header__button--icon" width="26" height="39" viewBox="335 16 26 39" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd" transform="translate(337 18)" stroke="#fff" stroke-width="3">
+              <circle cx="11.5" cy="7.5" r="7.5"/>
+              <path d="M.68 34.51S1.84 20.76 11.666 20.76c5.343 0 7.78 3.266 8.894 6.67.933 2.854.933 5.806.933 7.003"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="login-form">
+
+    <form action="">
+      <fieldset>
+        <h1>Welkom</h1>
+        <p>Log in om meer uit je verhalen te halen.</p>
+        <!-- <h1 class="login-alert">Uw wachtwoord of email klopt niet.</h1> -->
+        <label for="email">
+          Email adres
+          <input type="email" id="email" placeholder="read@greatstories.com">
+        </label>
+        <label for="password">
+          Wachtwoord
+          <input type="password" id="password" minlength="7" placeholder="*******">
+        </label>
+        <a href="forgotpassword.html">Wachtwoord vergeten?</a>
+        <input class="login-button" type="submit" value="Log in">
+        <a href="signup.html">Sign up</a>
+      </fieldset>
+    </form>
+
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

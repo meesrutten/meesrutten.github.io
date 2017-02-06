@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overzicht Pagina</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__grid-container">
+      <a href="#" class="header__link"><h1>Short Stories</h1></a>
+      <div class="header__button-container">
+        <button class="header__button header__button--search">
+          <svg class="header__button--icon" width="30" height="28" viewBox="275 18 30 28" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd" transform="translate(277 20)" stroke="#fff" stroke-width="2">
+              <circle cx="8.565" cy="8.565" r="8.565"/>
+              <path d="M15.896 14.896l8.772 7.552" stroke-linecap="square"/>
+            </g>
+          </svg>
+        </button>
+        <a href="/login.html" class="header__button header__button--profile">
+          <svg class="header__button--icon" width="26" height="39" viewBox="335 16 26 39" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd" transform="translate(337 18)" stroke="#fff" stroke-width="2">
+              <circle cx="11.5" cy="7.5" r="7.5"/>
+              <path d="M.68 34.51S1.84 20.76 11.666 20.76c5.343 0 7.78 3.266 8.894 6.67.933 2.854.933 5.806.933 7.003"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="search__field no-display">
+        <input class="search-bar" type="text" name="search" placeholder="Uw zoekopdracht">
+        <button class="search-button">
+          <svg width="30" height="28" viewBox="275 18 30 28" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd" transform="translate(277 20)" stroke="#fff" stroke-width="2">
+              <circle cx="8.565" cy="8.565" r="8.565"/>
+              <path d="M15.896 14.896l8.772 7.552" stroke-linecap="square"/>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="overview">
+
+    <section class="read-more">
+      <h2 class="read-more__title">Verder lezen</h2>
+      <article class="excerpt excerpt__read-more">
+        <h3 class="excerpt__title">Moe</h3>
+        <div class="story__cloud index__cloud--1"></div>
+        <div class="story__cloud index__cloud--2"></div>
+        <p class="excerpt__leader">De buschauffeur port me wakker. We zijn bij de eindhalte, Centraal Station. Ik stap uit en duw de kinderwagen voort waarin mijn zoon ligt te slapen. Ik wou dat ik hem was.</p>
+        <footer class="excerpt__metadata">
+          <p class="excerpt__progress">64% voltooid</p>
+          <a href="/moe.html" class="excerpt__story-link">
+            <div class="pointed-button">
+              <span class="pointed-button__text">Lezen</span>
+            </div>
+          </a>
+        </footer>
+      </article>
+    </section>
+
+    <section class="trending">
+      <h2 class="trending__title">Trending</h2>
+      <article class="excerpt excerpt__trending">
+        <h3 class="excerpt__title excerpt__title--stoned">Stoned</h3>
+        <p class="excerpt__leader excerpt__leader--stoned">Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan...</p>
+        <footer class="excerpt__metadata">
+          <a href="#" class="excerpt__story-link">8 likes</a>
+          <a href="#" class="excerpt__story-link">4 comments</a>
+          <a href="/stoned.html" class="excerpt__story-link">
+            <div class="pointed-button">
+              <span class="pointed-button__text">Lezen</span>
+            </div>
+          </a>
+        </footer>
+      </article>
+    </section>
+
+    <form class="sorting">
+      <fieldset>
+        <input type="checkbox" id="sort-button" class="accordion__checkbox">
+        <label for="sort-button" class="accordion"><span class="caret"></span>Meest geliked</label>
+
+        <fieldset>
+          <label>
+            <input name="main-sort" type="radio" value="Recent" checked>
+            Recent
+          </label>
+          <label>
+            <input name="main-sort" type="radio" value="Likes">
+            Likes
+          </label>
+          <label>
+            <input name="main-sort" type="radio" value="most comments">
+            Comments
+          </label>
+          <label>
+            <input name="main-sort" type="radio" value="Popular">
+            Populair
+          </label>
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <input type="checkbox" id="time-period__button" class="accordion__checkbox">
+        <label for="time-period__button" class="accordion"><span class="caret"></span>Vandaag</label>
+
+        <fieldset id="sort-button__dropdown">
+          <label>
+            <input name="secondary-sort" type="radio" value="today">
+            Vandaag
+          </label>
+          <label>
+            <input name="secondary-sort" type="radio" value="week">
+            Deze week
+          </label>
+          <label>
+            <input name="secondary-sort" type="radio" value="month">
+            Deze maand
+          </label>
+          <label>
+            <input name="secondary-sort" type="radio" value="year">
+            Dit jaar
+          </label>
+        </fieldset>
+      </fieldset>
+    </form>
+
+    <section class="sort-based__content">
+      <h2 class="sort-based__title">Meest Recent</h2>
+      <article class="excerpt excerpt__rainbow">
+        <h3 class="excerpt__title">Regenboog</h3>
+        <p class="excerpt__leader">Bus 21. Ik stap uit. Het is een gure dag, geen ultraviolette zonnestralen die het tere huidje van mijn zoontje aantasten. Hij ligt te slapen in z’n paarse kinderwagen.</p>
+        <footer class="excerpt__metadata">
+          <a href="#" class="excerpt__story-link">6 likes</a>
+          <a href="#" class="excerpt__story-link">5 comments</a>
+          <a href="/rainbow.html" class="excerpt__story-link">
+            <div class="pointed-button">
+              <span class="pointed-button__text">Lezen</span>
+            </div>
+          </a>
+        </footer>
+      </article>
+
+      <article class="excerpt">
+        <h3 class="excerpt__title">Beroemd</h3>
+        <p class="excerpt__leader">Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij.</p>
+        <footer class="excerpt__metadata">
+          <a href="#" class="excerpt__story-link">8 likes</a>
+          <a href="#" class="excerpt__story-link">4 comments</a>
+          <a href="#" class="excerpt__story-link">
+            <div class="pointed-button">
+              <span class="pointed-button__text">Lezen</span>
+            </div>
+          </a>
+        </footer>
+      </article>
+
+      <article class="excerpt">
+        <h3 class="excerpt__title">Nico Dijkshoorn die Mart Smeets imiteert</h3>
+        <p class="excerpt__leader">Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze...</p>
+        <footer class="excerpt__metadata">
+          <a href="#" class="excerpt__story-link">6 likes</a>
+          <a href="#" class="excerpt__story-link">5 comments</a>
+          <a href="#" class="excerpt__story-link">
+            <div class="pointed-button">
+              <span class="pointed-button__text">Lezen</span>
+            </div>
+          </a>
+        </footer>
+      </article>
+
+      <article class="excerpt">
+        <h3 class="excerpt__title">Martin Bril</h3>
+        <p class="excerpt__leader">Centraal Station. Iedereen gaat er naartoe, niemand moet er zijn. Behalve om verder te reizen. Ik stap uit de bus, lijn 21. Van Geuzenveld naar Centraal Station.</p>
+        <footer class="excerpt__metadata">
+          <a href="#" class="excerpt__story-link">8 likes</a>
+          <a href="#" class="excerpt__story-link">4 comments</a>
+          <a href="#" class="excerpt__story-link">
+            <div class="pointed-button">
+              <span class="pointed-button__text">Lezen</span>
+            </div>
+          </a>
+        </footer>
+      </article>
+
+      <article class="excerpt">
+        <h3 class="excerpt__title">Freudiaans</h3>
+        <p class="excerpt__leader">Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze...</p>
+        <footer class="excerpt__metadata">
+          <a href="#" class="excerpt__story-link">6 likes</a>
+          <a href="#" class="excerpt__story-link">5 comments</a>
+          <a href="#" class="excerpt__story-link">
+            <div class="pointed-button">
+              <span class="pointed-button__text">Lezen</span>
+            </div>
+          </a>
+        </footer>
+      </article>
+
+      <article class="excerpt">
+        <h3 class="excerpt__title">Het gebrek</h3>
+        <p class="excerpt__leader">De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit...</p>
+        <footer class="excerpt__metadata">
+          <a href="#" class="excerpt__story-link">8 likes</a>
+          <a href="#" class="excerpt__story-link">4 comments</a>
+          <a href="#" class="excerpt__story-link">
+            <div class="pointed-button">
+              <span class="pointed-button__text">Lezen</span>
+            </div>
+          </a>
+        </footer>
+      </article>
+
+    </section>
+  </main>
+
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
