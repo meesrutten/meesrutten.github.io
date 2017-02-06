@@ -421,11 +421,34 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-79511834-2', 'auto');
 ga('send', 'pageview');
 
-for (var i = 0; i < projectLink.length; i++) {
-  projectLink[i].addEventListener('click', function(){
-    ga('send', 'event', 'click', projectLink[i].href);
-  })
-}
+projectLink[0].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'Tired');
+})
+projectLink[1].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'BouncyBall');
+})
+projectLink[2].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'High');
+})
+projectLink[3].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'Rainbow');
+})
+projectLink[4].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'BITLogo');
+})
+projectLink[5].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'Navvy');
+})
+projectLink[6].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'PHW');
+})
+projectLink[7].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'Amsterdone');
+})
+projectLink[8].addEventListener('click', function(){
+  ga('send', 'event', 'click', 'PWeb');
+})
+
 
 githubLink.addEventListener('click', function(){
   ga('send', 'event', 'click', 'GitHub');
