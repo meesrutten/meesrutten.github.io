@@ -13,16 +13,16 @@ $bot-output-delay: 600ms;
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat');
-  src: url('./fonts/Montserrat/Montserrat-Regular.ttf') format('ttf'),
-       url('./fonts/Montserrat/Montserrat-Bold.ttf') format('ttf');
+  src: url('/fonts/Montserrat/Montserrat-Regular.ttf') format('ttf'),
+       url('/fonts/Montserrat/Montserrat-Bold.ttf') format('ttf');
   font-weight: normal;
 }
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto');
-  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('ttf'),
-       url('./fonts/Roboto/Roboto-Italic.ttf') format('ttf'),
-       url('./fonts/Roboto/Roboto-Bold.ttf') format('ttf');
+  src: url('/fonts/Roboto/Roboto-Regular.ttf') format('ttf'),
+       url('/fonts/Roboto/Roboto-Italic.ttf') format('ttf'),
+       url('/fonts/Roboto/Roboto-Bold.ttf') format('ttf');
   font-weight: normal;
 }
 
