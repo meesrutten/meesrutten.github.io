@@ -97,8 +97,8 @@ body {
   .chatlist .bot__output--second-sentence {
     display: block; }
   .chatlist .bot__outputImage {
-    max-width: 20em;
-    height: 15em; }
+    max-width: 16em;
+    height: 12em; }
 
 @keyframes animateBubble {
   0% {

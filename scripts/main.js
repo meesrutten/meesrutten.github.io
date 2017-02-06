@@ -77,12 +77,14 @@ var checkInput = function(input) {
     //   console.log("include succes");
     // }
     //If user reacts with "yes" and the previous input was in textVal
-    if(input == "yes" && previousInput == textVal){
-      console.log("sausigheid");
+    if(input == "yes" || input.indexOf("yes") >= 0){
+      if(previousInput == textVal) {
+        console.log("sausigheid");
 
-      isReaction = true;
-      hasCorrectInput = true;
-      botResponse(textVal);
+        isReaction = true;
+        hasCorrectInput = true;
+        botResponse(textVal);
+      }
     }
     if(input == "no" && previousInput == textVal){
       unkwnCommReaction = "For a list of commands type: Commands";
@@ -259,7 +261,7 @@ var possibleInput = {
     responseText("You can type a command in the chatbox")
     responseText("Something like &quot;Navvy, please show me Mees&rsquo; best work&quot;")
     responseText("Did you find a bug or problem? Tweet me @MeesRu")
-    responseText("Do you need more help? (Yes/No)")
+    // responseText("Do you need more help? (Yes/No)")
 
     commandReset(0);
     return
@@ -280,15 +282,14 @@ var possibleInput = {
     responseImg("rsz_meesface.jpg");
     responseText("I'm a 20 year old Communication and Multimedia Design student");
     responseText("My ambition is to become a great Creative Front-End Developer");
-    responseText("Would you like to see Mees' CV?");
+    responseText("Would you like to see Mees' CV? (Yes/No)");
     commandReset(2);
     return
     },
   "experience" : function(){
     responseText("Mees has previously worked at:");
-    responseText("Cobra Systems");
-    responseText("BIT Students");
-    responseText("as webdeveloper");
+    responseText("Cobra Systems as web- developer / designer");
+    responseText("BIT Students as web- developer / designer");
     commandReset(3);
     return
   },
@@ -329,21 +330,12 @@ var possibleInput = {
   "contact" : function(){
     responseText("email: <a href='mailto:meesrutten@gmail.com?Subject=Hello%20Mees' target='_top'>send me a message</a>");
     responseText("Twitter: <a href='https://twitter.com/meesrttn'>@MeesRttn</a>");
-    commandReset(7);
+    commandReset(8);
     return
   },
   "commands" : function(){
-    responseText("help");
-    responseText("best work");
-    responseText("about");
-    responseText("vision");
-    responseText("experience");
-    responseText("cv");
-    responseText("hobbies");
-    responseText("interests");
-    responseText("contact");
-    responseText("rick roll");
-    commandReset();
+    responseText("help, best work, about, vision, experience, CV, hobbies / interests, contact, rick roll");
+    commandReset(9);
     return
   },
   "rick roll" : function(){
@@ -361,8 +353,14 @@ var reactionInput = {
     return
   },
   "help" : function(){
-    //Redirects you to a different page after 3 secs
     responseText("Reaction");
+    animationCounter = 1;
+    return
+    },
+  "about" : function(){
+    responseText("I will redirect you to Mees' CV");
+    // setTimeout(function(){
+    //   window.location.href = "/images/CV-MeesRutten-2017-februari.png"; }, 3000);
     animationCounter = 1;
     return
     },
