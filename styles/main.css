@@ -1,14 +1,5 @@
 @import url(../styles/reset.css);
-@font-face {
-  font-family: 'Montserrat';
-  src: local("Montserrat");
-  src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Bold.ttf") format("ttf");
-  font-weight: normal; }
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto");
-  src: url("../fonts/Roboto-Regular.ttf") format("ttf"), url("../fonts/Roboto-Italic.ttf") format("ttf"), url("../fonts/Roboto-Bold.ttf") format("ttf");
-  font-weight: normal; }
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
 *, *:before, *:after {
   box-sizing: border-box; }
 
