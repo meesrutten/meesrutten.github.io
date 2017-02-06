@@ -323,7 +323,13 @@ var possibleInput = {
     responseText("Create 3D browser experiences");
     responseText("Learn Three.js and WebGL");
     responseText("Combine Motion Design with Front-End");
-    commandReset(6);
+    commandReset(7);
+    return
+  },
+  "contact" : function(){
+    responseText("email: <a href='mailto:meesrutten@gmail.com?Subject=Hello%20Mees' target='_top'>send me a message</a>");
+    responseText("Twitter: <a href='https://twitter.com/meesrttn'>@MeesRttn</a>");
+    commandReset(7);
     return
   },
   "commands" : function(){
@@ -335,8 +341,9 @@ var possibleInput = {
     responseText("cv");
     responseText("hobbies");
     responseText("interests");
+    responseText("contact");
     responseText("rick roll");
-    commandReset(7);
+    commandReset();
     return
   },
   "rick roll" : function(){
