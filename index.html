@@ -1,0 +1,368 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Mees Rutten</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <main class="page__main">
+    <div class="block--background">
+      <div class="chatbot__overview">
+        <ul class="chatlist">
+          <li class="bot__output bot__output--standard">Hey, I'm Navvy!</li>
+          <li class="bot__output bot__output--standard">I will guide you through Mees' portfolio!</li>
+          <li class="bot__output bot__output--standard">
+            <span class="bot__output--second-sentence">You can ask me a bunch of things!</span>
+            <ul>
+              <li class="input__nested-list">Something <span class="bot__command">about</span> Mees</li>
+              <li class="input__nested-list">Mees' <span class="bot__command">best work</span></li>
+              <li class="input__nested-list">Maybe I could <span class="bot__command">help</span> (for more instructions and commands)</li>
+            </ul>
+            You could also scroll down to see Mees' full portfolio
+          </li>
+        </ul>
+      </div>
+      <div class="chatbox-area">
+        <form action="" id="chatform">
+            <textarea placeholder="Talk to me!" class="chatbox" name="chatbox" resize: "none" minlength="2"></textarea>
+            <input class="submit-button" type="submit" value="send">
+        </form>
+      </div>
+      <svg class="downarrow-svg" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+              <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+          </defs>
+          <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+              <g id="Line" stroke="#979797">
+                  <use stroke-width="8" xlink:href="#path-1"></use>
+                  <use stroke-width="1" xlink:href="#path-1"></use>
+              </g>
+              <g id="Line-Copy" stroke="#979797">
+                  <use stroke-width="8" xlink:href="#path-2"></use>
+                  <use stroke-width="1" xlink:href="#path-2"></use>
+              </g>
+          </g>
+      </svg>
+    </div>
+
+    <section class="grid__section">
+      <article class="block__article">
+        <h2 class="title">About me</h2>
+        <p class="about__intro">My name is Mees Rutten. I'm an aspiring Creative Front-end Developer. I want to create high performance, accessible websites that deliver amazing experiences to the user.</p>
+        <nav class="about__nav">
+          <h3>Some things you might find interesting:</h3>
+          <ul>
+            <li><a href="#animation"><span>Web animations</span> I'm proud of</a></li>
+            <li><a href="#projects"><span>Projects</span> I'm most proud of</a></li>
+            <li><a href="https://github.com/meesrutten/">Check out my <span>GitHub</span> account</a></li>
+            <li><a href="https://codepen.io/meesrutten/">Check out my <span>CodePen</span> account</a></li>
+            <!-- <li><a href=""></a></li> -->
+          </ul>
+        </nav>
+      </article>
+      <article class="block__article">
+        <h2 class="title" id="animation">Web animation</h2>
+        <h3 class="large-screen__help">Hover over a project to see more information then click it to see it's content</h3>
+        <h3 class="small-screen__help">Tap the button to see more information then tap the card to see it's content</h3>
+
+        <a href="/shortstories/tired.html" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/p-web-moe.png" alt="">
+            <h3 class="card__title">Tired</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <p class="card__excerpt">This is an animated story I made for a school project. It simulates a tired reader. I made this with CSS transforms and blur filters.</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="/shortstories/stoned.html" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/p-web-high.png" alt="">
+            <h3 class="card__title">High</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <!-- <p class="card__excerpt">This is some sample text where i write about the project i did This is some sample text where i write about the project i did This is some sample text where i write about the project i did</p> -->
+              <p class="card__excerpt">This is an animated story I made for a school project. It simulates reading while under influence of drugs. I made this with drop-shadow filters.</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="/shortstories/rainbow.html" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/p-web-rainbow.png" alt="">
+            <h3 class="card__title">Rainbow</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <p class="card__excerpt">This is an animated story I made for a school project. It simulates rain clearing up. I made this with animation on scroll. (Best experience on MacBook or mobile)</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="/animation/bouncyball" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/ball-animatie.png" alt="">
+            <h3 class="card__title">Bouncy Ball</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <p class="card__excerpt">This is an animated ball I made a while back. It bounces around your screen, changing color every drop. I made the color change with JS and movement with CSS</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://codepen.io/meesrutten/full/BQyjLJ" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/bit-logo.png" alt="">
+            <h3 class="card__title">Animated Logo</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <p class="card__excerpt">This is an animated logo I made. It's animated with GreenSock.</p>
+            </div>
+          </article>
+        </a>
+      </article>
+
+      <article class="block__article">
+        <h2 class="title" id="projects">Projects</h2>
+        <h3 class="large-screen__help">Hover over a project to see more information</h3>
+        <h3 class="small-screen__help">Tap a project once to see more information then tap again to see it's content</h3>
+
+        <a href="https://github.com/meesrutten/chatbot" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/navvy-bot.png" alt="">
+            <h3 class="card__title">Navvy</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <p class="card__excerpt">This is Navvy, you can preview it on top of this page. I made it with native JS. You can check it out on GitHub.</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="https://pakhuiswerk.nl/" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/pakhuiswerk.png" alt="">
+            <h3 class="card__title">Pakhuiswerk</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <p class="card__excerpt">This is a custom WordPress website I created while working at Cobra Systems. Layout is done with flexbox.</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="http://amsterdone.nl/" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/amsterdone.png" alt="">
+            <h3 class="card__title">Amsterdone</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <p class="card__excerpt">AmsterDone is a first prize winning school project. It's an activity checklist with lots of fun things to do while in Amsterdam made for International Students</p>
+            </div>
+          </article>
+        </a>
+
+        <a href="/shortstories/index.html" class="card__link">
+          <article class="image__container">
+            <img class="card__image" src="./images/p-web-overzicht.png" alt="">
+            <h3 class="card__title">Website Layout</h3>
+            <button class="card__button">
+              <svg class="card__button--caret" viewBox="153 111 169 90" width="1.877em" height="1em" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                      <path d="M0.5,0.5 L79.354296,79.354296" id="path-1"></path>
+                      <path d="M158.854296,0 L80,78.854296" id="path-2"></path>
+                  </defs>
+                  <g id="caret" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(158.000000, 116.000000)" stroke-linecap="round">
+                      <g id="Line" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-1"></use>
+                          <use stroke-width="1" xlink:href="#path-1"></use>
+                      </g>
+                      <g id="Line-Copy" stroke="#979797">
+                          <use stroke-width="8" xlink:href="#path-2"></use>
+                          <use stroke-width="1" xlink:href="#path-2"></use>
+                      </g>
+                  </g>
+              </svg>
+            </button>
+            <div class="card__excerpt--underlay" hidden>
+              <p class="card__excerpt">Short Stories is a school project. Layout was made with flexbox and viewport relative units.</p>
+            </div>
+          </article>
+        </a>
+      </article>
+
+    </section>
+  </main>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script> -->
+
+    <!-- bower:js -->
+    <!-- endbower -->
+
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
