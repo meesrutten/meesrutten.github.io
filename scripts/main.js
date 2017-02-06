@@ -39,6 +39,7 @@ sendForm.onkeydown = function(e){
 
     //Empty textarea fix
     if(input.length > 0) {
+      ga('send', 'event', 'interact', 'Navvy');
       createBubble(input)
     }
   }
@@ -54,6 +55,7 @@ sendForm.addEventListener('submit', function(e) {
   //Empty textarea fix
   if(input.length > 0) {
     createBubble(input)
+    ga('send', 'event', 'interact', 'Navvy');
   }
 }) //end of eventlistener
 
@@ -421,13 +423,9 @@ ga('send', 'pageview');
 
 for (var i = 0; i < projectLink.length; i++) {
   projectLink[i].addEventListener('click', function(){
-    ga('send', 'event', 'click', this);
+    ga('send', 'event', 'click', page);
   })
 }
-
-chatbotButton.addEventListener('click', function(){
-  ga('send', 'event', 'interact', 'Navvy');
-})
 
 githubLink.addEventListener('click', function(){
   ga('send', 'event', 'click', 'GitHub');
