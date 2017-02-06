@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="ball-animation.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="box">
+   <div id="ballWrapper">
+     <div id="ball" class="bg"></div>
+     <div id="ball" class="bg hidden"></div>
+     <div id="ballShadow"></div>
+   </div>
+  </div>
+
+<script>
+var ballBackground = document.querySelectorAll('.bg')
+
+function newGradient() {
+    var c1 = {
+        r: Math.floor(Math.random()*255),
+        g: Math.floor(Math.random()*255),
+        b: Math.floor(Math.random()*255)
+    };
+    var c2 = {
+        r: Math.floor(Math.random()*255),
+        g: Math.floor(Math.random()*255),
+        b: Math.floor(Math.random()*255)
+    };
+    c1.rgb = 'rgb('+c1.r+','+c1.g+','+c1.b+')';
+    c2.rgb = 'rgb('+c2.r+','+c2.g+','+c2.b+')';
+    return 'radial-gradient(at top left, '+c1.rgb+', '+c2.rgb+')';
+}
+function rollBg() {
+  document.querySelector('.bg.hidden').style.background= newGradient();
+  for (var i = 0; i < ballBackground.length; i++) {
+    ballBackground[i].classList.toggle('hidden');
+  }
+}
+
+rollBg();
+setTimeout(function(){
+  rollBg();
+  setInterval(rollBg, 1100);
+},605);
+</script>
+</body>
+</html>
