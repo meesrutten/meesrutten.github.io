@@ -418,18 +418,13 @@ if (mq.matches) {
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {
-     'transport': 'beacon',
-     'hitCallback': function(){document.location = url;}
-   });
-}
-
 ga('create', 'UA-79511834-2', 'auto');
 ga('send', 'pageview');
 
 for (var i = 0; i < projectLink.length; i++) {
-  projectLink[i].addEventListener('click', trackOutboundLink(this))
+  projectLink[i].addEventListener('click', function(){
+    ga('send', 'event', 'click', projectLink[i].href);
+  })
 }
 
 githubLink.addEventListener('click', function(){
