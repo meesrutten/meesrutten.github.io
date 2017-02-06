@@ -354,11 +354,11 @@ var reactionInput = {
     animationCounter = 1;
     return
   },
-  "help" : function(){
-    responseText("Reaction");
-    animationCounter = 1;
-    return
-    },
+  // "help" : function(){
+  //   responseText("Reaction");
+  //   animationCounter = 1;
+  //   return
+  //   },
   "about" : function(){
     responseText("Things I want to learn or do:");
     responseText("Get great at CSS & JS animation");
