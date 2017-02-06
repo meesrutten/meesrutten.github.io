@@ -423,7 +423,7 @@ ga('send', 'pageview');
 
 for (var i = 0; i < projectLink.length; i++) {
   projectLink[i].addEventListener('click', function(){
-    ga('send', 'event', 'click', [page]);
+    ga('send', 'pageview', [page], [fieldsObject]);
   })
 }
 
