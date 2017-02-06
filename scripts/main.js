@@ -12,7 +12,13 @@ var sendForm = document.querySelector('#chatform'),
     input,
     previousInput,
     isReaction = false,
-    unkwnCommReaction = "I didn't quite get that.";
+    unkwnCommReaction = "I didn't quite get that.",
+    //for analytics
+    projectLink = document.querySelectorAll(".card__link"),
+    chatbotButton = document.querySelector(".submit-button"),
+    githubLink = document.querySelector("[href='https://github.com/meesrutten/']"),
+    codepenLink = document.querySelector("[href='https://codepen.io/meesrutten/']");
+
 
 //fixed that when you scroll to end it doesnt scroll window
 // chatList.addEventListener('mouseover', function(){
@@ -404,32 +410,38 @@ if (mq.matches) {
   }
 }
 
-setInterval(function(){
-  localStorage.setItem("scrollTop", document.body.scrollTop);
-},300)
-// then getting same position from it onload(reload)
-window.onload = function() {
-  var scroll = parseInt(localStorage.getItem("scrollTop"));
-  //parseInt(localStorage.scrollTop);
-  if (!isNaN(scroll))
-    document.body.scrollTop = scroll;
-  }
+// ANALYTICS
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-79511834-2', 'auto');
+ga('send', 'pageview');
+
+for (var i = 0; i < projectLink.length; i++) {
+  projectLink[i].addEventListener('click', function(){
+    ga('send', 'event', 'click', 'link'+[i]);
+  })
+}
+
+chatbotButton.addEventListener('click', function(){
+  ga('send', 'event', 'interact', 'Navvy');
+})
+
+githubLink.addEventListener('click', function(){
+  ga('send', 'event', 'click', 'GitHub');
+})
+
+codepenLink.addEventListener('click', function(){
+  ga('send', 'event', 'click', 'CodePen');
+})
 
 
-
 //
-// // WCAG-compliant navigation toggling
-// (function navigationToggling() {
-//   const navigationSelect = document.querySelector('.navigation');
-//   const navigationToggle = document.querySelector('.header__menu--button');
-//
-//   navigationToggle.addEventListener('click', toggleNavigation);
-//
-//   // navigationToggle.setAttribute('aria-expanded', 'false');
-//
-//   function toggleNavigation() {
-//     let expanded = this.getAttribute('aria-expanded') === 'true';
-//     this.setAttribute('aria-expanded', String(!expanded));
-//     navigationSelect.hidden = expanded;
-//   }
-// })();
+// requireTou.addEventListener('click', function(){
+//   ga('send', 'event', 'connect', 'wifi');
+// })
+// website.addEventListener('click', function(){
+//   ga('send', 'event', 'visit', 'website');
+// })
