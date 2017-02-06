@@ -1,18 +1,18 @@
-var sendForm = document.querySelector('#chatform')
-var textInput = document.querySelector('.chatbox')
-var chatList = document.querySelector('.chatlist')
-var userBubble = document.querySelectorAll('.userInput')
-var botBubble = document.querySelectorAll('.bot__output')
-var animateBotBubble = document.querySelectorAll('.bot__input--animation')
-var overview = document.querySelector('.chatbot__overview')
-var hasCorrectInput;
-var imgLoader = false;
-var animationCounter = 1;
-var animationBubbleDelay = 600;
-var input;
-var previousInput;
-var isReaction = false;
-var unkwnCommReaction = "I didn't quite get that."
+var sendForm = document.querySelector('#chatform'),
+    textInput = document.querySelector('.chatbox'),
+    chatList = document.querySelector('.chatlist'),
+    userBubble = document.querySelectorAll('.userInput'),
+    botBubble = document.querySelectorAll('.bot__output'),
+    animateBotBubble = document.querySelectorAll('.bot__input--animation'),
+    overview = document.querySelector('.chatbot__overview'),
+    hasCorrectInput,
+    imgLoader = false,
+    animationCounter = 1,
+    animationBubbleDelay = 600,
+    input,
+    previousInput,
+    isReaction = false,
+    unkwnCommReaction = "I didn't quite get that.";
 
 //fixed that when you scroll to end it doesnt scroll window
 // chatList.addEventListener('mouseover', function(){
@@ -88,6 +88,7 @@ var checkInput = function(input) {
     }
     if(input == "no" && previousInput == textVal){
       unkwnCommReaction = "For a list of commands type: Commands";
+      unknownCommand("I'm sorry to hear that :(")
       unknownCommand(unkwnCommReaction);
       hasCorrectInput = true;
     }
@@ -230,6 +231,8 @@ function responseImg(e) {
 
 }
 
+
+
 // animateStandardBotOutput();
 
 //change to SCSS loop
@@ -262,12 +265,10 @@ var possibleInput = {
     responseText("Something like &quot;Navvy, please show me Mees&rsquo; best work&quot;")
     responseText("Did you find a bug or problem? Tweet me @MeesRu")
     // responseText("Do you need more help? (Yes/No)")
-
     commandReset(0);
     return
     },
   "best work" : function(){
-    //Redirects you to a different page after 3 secs
     responseText("I will show you Mees' best work!");
     responseText("These are his <a href='#animation'>best animations</a>")
     responseText("These are his <a href='#projects'>best projects</a>")
@@ -277,12 +278,11 @@ var possibleInput = {
     return
     },
   "about" : function(){
-    //Redirects you to a different page after 3 secs
     responseText("This is me, Navvy's maker, Mees Rutten");
     responseImg("rsz_meesface.jpg");
     responseText("I'm a 20 year old Communication and Multimedia Design student");
     responseText("My ambition is to become a great Creative Front-End Developer");
-    responseText("Would you like to see Mees' CV? (Yes/No)");
+    responseText("Would you like to know about Mees' vision? (Yes/No)");
     commandReset(2);
     return
     },
@@ -290,6 +290,7 @@ var possibleInput = {
     responseText("Mees has previously worked at:");
     responseText("Cobra Systems as web- developer / designer");
     responseText("BIT Students as web- developer / designer");
+    responseText("Would you like to see Mees' CV? (Yes/No)");
     commandReset(3);
     return
   },
@@ -334,6 +335,7 @@ var possibleInput = {
     return
   },
   "commands" : function(){
+    responseText("This is a list of commands Navvy knows:")
     responseText("help, best work, about, vision, experience, CV, hobbies / interests, contact, rick roll");
     commandReset(9);
     return
@@ -358,12 +360,21 @@ var reactionInput = {
     return
     },
   "about" : function(){
-    responseText("I will redirect you to Mees' CV");
-    // setTimeout(function(){
-    //   window.location.href = "/images/CV-MeesRutten-2017-februari.png"; }, 3000);
+    responseText("Things I want to learn or do:");
+    responseText("Get great at CSS & JS animation");
+    responseText("Create 3D browser experiences");
+    responseText("Learn Three.js and WebGL");
+    responseText("Combine Motion Design with Front-End");
     animationCounter = 1;
     return
     },
+  "experience" : function(){
+    responseText("I will redirect you to Mees' CV");
+    setTimeout(function(){
+      window.location.href = "/images/CV-MeesRutten-2017-februari.png"; }, 3000);
+    animationCounter = 1;
+    return
+  }
 }
 
 ///////////////////////////////////////////////////////
