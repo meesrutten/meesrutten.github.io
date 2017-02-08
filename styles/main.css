@@ -414,4 +414,7 @@ footer {
     footer .footer__link:hover {
       color: #2ecc71; }
 
+_::-webkit-:host:not(:root:root), .card__excerpt--underlay {
+  transform: translateY(-3em); }
+
 /*# sourceMappingURL=main.css.map */

@@ -605,3 +605,11 @@ footer {
     }
   }
 }
+
+
+// Safari 10+
+// Because Safari sucks ass, I have to do this.
+
+_::-webkit-:host:not(:root:root), .card__excerpt--underlay {
+  transform: translateY(-3em);
+}
