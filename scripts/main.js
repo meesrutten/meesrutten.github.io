@@ -457,18 +457,6 @@ githubLink.addEventListener('click', function(){
 codepenLink.addEventListener('click', function(){
   ga('send', 'event', 'click', 'CodePen');
 })
-
-var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-               navigator.userAgent && !navigator.userAgent.match('CriOS');
-var svgCaret = document.querySelectorAll('.card__button--caret');
-
-if (isSafari) {
-  console.log("safari is true");
-  for (var i = 0; i < svgCaret.length; i++) {
-    svgCaret[i].style.transform = "rotate(180deg) translateX(-25%)"
-  }
-}
-
 //
 // requireTou.addEventListener('click', function(){
 //   ga('send', 'event', 'connect', 'wifi');
