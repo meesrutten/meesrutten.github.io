@@ -322,7 +322,7 @@ input[type="submit"] {
   left: 50%;
   top: 2em;
   transform: translateX(-50%);
-  animation: pointyArrow 2s ease-in infinite;
+  animation: pointyArrow 1.2s ease-in infinite;
   will-change: transform;
   g {
 
@@ -338,7 +338,7 @@ input[type="submit"] {
     transform: translateY(0%);
   }
   50%{
-    transform: translateY(-15%);
+    transform: translateY(-20%);
   }
   100%{
     transform: translateY(0%);
@@ -436,24 +436,33 @@ input[type="submit"] {
   }
 }
 
-.card__link {
-  box-shadow: 0 1px 3px 2px rgba(0,0,0,0.1);
-  border-radius: 3px;
+// .card__link {
+.card {
+  // box-shadow: 0 1px 3px 2px rgba(0,0,0,0.1);
+  // border-radius: 3px;
   margin: 1.5em auto;
   padding-top: 0;
   text-decoration: none;
-  color: #000;
+  // color: #000;
   width: 100%;
-
   article {
     width: 100%;
     height: 100%;
+  }
+  .card__link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
   .image__container {
     position: relative;
     width: 100%;
     height: 100%;
     margin-bottom: -3em;
+    @media screen and(min-width: 48em) {
+      margin-bottom: -1.5%;
+    }
   }
   .card__image {
     width: 100%;
@@ -514,12 +523,13 @@ input[type="submit"] {
     }
   }
   .card__button[aria-expanded=true] {
-    transform: translateX(-50%) translateY(-13.65em);
+    transform: translateX(-50%) translateY(-13.675em);
     svg {
       transform: rotate(0deg) translateY(10%);
     }
     + .card__excerpt--underlay {
-      height: 12em;
+      transform: scaleY(1);
+      opacity: 0.95;
       .card__excerpt {
         opacity: 1;
         // transform: translateY(0);
@@ -533,16 +543,18 @@ input[type="submit"] {
     opacity: 0;
     display: block;
     width: 100%;
+    transform-origin: bottom;
     // height: 100%;
     background-color: $background-color;
-    height: 0;
+    // height: 0;
+    height: 12em;
+    z-index: 12;
 
-    transition: 400ms opacity ease-in, 200ms height ease-in;
+    transition: 400ms opacity ease-in, 200ms transform ease-in;
+
     @media screen and(max-width: 48em){
-      // height: 100%;
-      opacity: 0.85;
-      // height: 0;
-
+      transform: scaleY(0);
+      opacity: 0.95;
     }
   }
   .card__excerpt{
@@ -572,11 +584,12 @@ input[type="submit"] {
   }
   @media screen and(min-width: 48em){
     width: 47.5%;
-    margin: 1em 0;
+    margin: 2.5em 0;
     &:hover {
       .card__excerpt--underlay {
-        opacity: 1;
-        height: 100%;
+        opacity: 0.95;
+        box-shadow: 0 1px 3px 2px rgba(0,0,0,0.1);
+        // height: 100%;
       }
       .card__excerpt {
         opacity: 1;

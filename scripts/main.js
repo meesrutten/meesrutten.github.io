@@ -424,40 +424,40 @@ ga('create', 'UA-79511834-2', 'auto');
 ga('send', 'pageview');
 
 projectLink[0].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'Tired');
+  ga('send', 'event', 'visit', 'Tired');
 })
 projectLink[1].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'BouncyBall');
+  ga('send', 'event', 'visit', 'BouncyBall');
 })
 projectLink[2].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'High');
+  ga('send', 'event', 'visit', 'High');
 })
 projectLink[3].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'Rainbow');
+  ga('send', 'event', 'visit', 'Rainbow');
 })
 projectLink[4].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'BITLogo');
+  ga('send', 'event', 'visit', 'BITLogo');
 })
 projectLink[5].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'Navvy');
+  ga('send', 'event', 'visit', 'Navvy');
 })
 projectLink[6].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'PHW');
+  ga('send', 'event', 'visit', 'PHW');
 })
 projectLink[7].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'Amsterdone');
+  ga('send', 'event', 'visit', 'Amsterdone');
 })
 projectLink[8].addEventListener('click', function(){
-  ga('send', 'event', 'click', 'PWeb');
+  ga('send', 'event', 'visit', 'PWeb');
 })
 
 
 githubLink.addEventListener('click', function(){
-  ga('send', 'event', 'click', 'GitHub');
+  ga('send', 'event', 'visit', 'GitHub');
 })
 
 codepenLink.addEventListener('click', function(){
-  ga('send', 'event', 'click', 'CodePen');
+  ga('send', 'event', 'visit', 'CodePen');
 })
 //
 // requireTou.addEventListener('click', function(){
