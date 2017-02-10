@@ -250,6 +250,7 @@ textarea[name="chatbox"] {
 }
 
 input[type="submit"] {
+  -webkit-appearance: none;
   appearance: none;
   border: 0;
 
@@ -538,7 +539,7 @@ input[type="submit"] {
 
     transition: 400ms opacity ease-in, 200ms height ease-in;
     @media screen and(max-width: 48em){
-      // height: 75%;
+      // height: 100%;
       opacity: 0.85;
       // height: 0;
 
@@ -547,7 +548,7 @@ input[type="submit"] {
   .card__excerpt{
     position: absolute;
     bottom: 10%;
-    z-index: 4;
+    z-index: 7;
     padding: 1em;
     // padding-bottom: 0;
     // height: 0;
@@ -575,6 +576,7 @@ input[type="submit"] {
     &:hover {
       .card__excerpt--underlay {
         opacity: 1;
+        height: 100%;
       }
       .card__excerpt {
         opacity: 1;

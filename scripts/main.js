@@ -75,15 +75,15 @@ var createBubble = function(input) {
 }
 
 var checkInput = function(input) {
-
   hasCorrectInput = false;
   isReaction = false;
   //Checks all text values in possibleInput
-
   for(var textVal in possibleInput){
+
     // if(input.includes(textVal) == true){
     //   console.log("include succes");
     // }
+
     //If user reacts with "yes" and the previous input was in textVal
     if(input == "yes" || input.indexOf("yes") >= 0){
       if(previousInput == textVal) {
@@ -100,7 +100,6 @@ var checkInput = function(input) {
       unknownCommand(unkwnCommReaction);
       hasCorrectInput = true;
     }
-
     //Is a word of the input also in possibleInput object?
     if(input == textVal || input.indexOf(textVal) >=0 && isReaction == false){
 			console.log("succes");
@@ -267,7 +266,10 @@ function commandReset(e){
   console.log(previousInput);
 }
 
+// hlep
+
 var possibleInput = {
+  // "hlep" : this.help(),
   "help" : function(){
     responseText("You can type a command in the chatbox")
     responseText("Something like &quot;Navvy, please show me Mees&rsquo; best work&quot;")
