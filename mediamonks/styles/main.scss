@@ -2,10 +2,10 @@
 @font-face {
   font-family: 'klavika';
   src: local('klavika');
-  src: url('mediamonks/fonts/klavika/klavika-light-webfont.woff') format('woff'),
-       url('mediamonks/fonts/klavika/klavika-light-webfont.svg') format('svg'),
-       url('mediamonks/fonts/klavika/klavika-light-webfont.eot') format('eot'),
-       url('mediamonks/fonts/klavika/klavika-light-webfont.ttf') format('ttf');
+  src: url('./fonts/klavika/klavika-light-webfont.woff') format('woff'),
+       url('./fonts/klavika/klavika-light-webfont.svg') format('svg'),
+       url('./fonts/klavika/klavika-light-webfont.eot') format('eot'),
+       url('./fonts/klavika/klavika-light-webfont.ttf') format('ttf');
   font-weight: 400;
 }
 
@@ -42,10 +42,10 @@ body {
   transition: 600ms transform ease-in-out;
 
   @media screen and(min-width: 48em){
-    background-image: url(mediamonks/images/background.jpg);
+    background-image: url(./images/background.jpg);
   }
   @media screen and(max-width: 48em){
-    background-image: url(mediamonks/images/background-mobile.jpg);
+    background-image: url(./images/background-mobile.jpg);
   }
   background-position: left top;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body {
   left: 1%;
 }
 
-img[src="mediamonks/images/logo.svg"]{
+img[src="./images/logo.svg"]{
   position: absolute;
   right: 1%;
   bottom: 0;
