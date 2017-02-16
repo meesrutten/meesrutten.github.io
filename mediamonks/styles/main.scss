@@ -166,6 +166,7 @@ body {
   &:hover {
     .caret {
       border-color: #999;
+      cursor: pointer;
     }
   }
   &:focus{
@@ -188,7 +189,7 @@ body {
   left: 1%;
 }
 
-img[src="../images/logo.svg"]{
+img[src="images/logo.svg"]{
   position: absolute;
   right: 1%;
   bottom: 0;
