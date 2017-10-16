@@ -28,4 +28,4 @@ where doc is the data and start/end are variables
 
 ***
 ### License
-Creative Commons
+CopyLeft
