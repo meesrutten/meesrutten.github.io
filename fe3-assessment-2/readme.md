@@ -1,4 +1,4 @@
-# Sup
+# Front End 3 - Assessment 2
 [Link to visualisation](https://meesrutten.github.io/fe3-assessment-2/)
 So this is a short description about the project.
 This graphic displays if there were trees in Bob Ross' paintings in Season 1 of his series.
